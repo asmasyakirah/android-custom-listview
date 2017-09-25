@@ -36,18 +36,20 @@ public class Thumbnail1Activity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thumbnail);
+
+        // Setup title and description
         setTitle(getString(TITLE));
-
-        context=this;
-
-        listView = (ListView) findViewById(R.id.thumbnailListView);
-        listView.setAdapter(new CustomAdapter(this, names, images));
-
         details = (TextView) findViewById(R.id.detailTextView);
         details.setText(getString(R.string.title));
         details.append(getString(TITLE));
         details.append(getString(R.string.reference));
         details.append(getString(REFERENCE_URL));
+
+        context=this;
+
+        // Implement listView using BaseAdapter
+        listView = (ListView) findViewById(R.id.thumbnailListView);
+        listView.setAdapter(new Thumbnail1Adapter(this, names, images));
 
     }
 }

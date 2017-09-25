@@ -3,8 +3,8 @@
     <string name="app_name">Android-Custom-ListView</string>
     <string name="title">Title: \n</string>
     <string name="reference">\n\nReferences: \n</string>
-    <string name="list_simple_thumbnail_1">Simple list with thumbnail 1</string>
-    <string name="list_simple_thumbnail_2">Simple list with thumbnail 2</string>
+    <string name="list_simple_thumbnail_1">Simple list with thumbnail (1)</string>
+    <string name="list_simple_thumbnail_2">Simple list with thumbnail (2)</string>
     <string name="list_dropdown_with_details">List dropdown with details</string>
     <string name="list_group_dropdown_checklist">Group Dropdown Checklist</string>
     <string name="list_simple_thumbnail_1_url">https://www.caveofprogramming.com/guest-posts/custom-listview-with-imageview-and-textview-in-android.html</string>
