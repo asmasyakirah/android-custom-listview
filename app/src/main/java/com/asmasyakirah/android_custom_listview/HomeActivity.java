@@ -24,8 +24,11 @@ public class HomeActivity extends AppCompatActivity
         switch (tag)
         {
             case 0:
-                // Intent Service
                 intent = new Intent(this, BaseAdapterActivity.class);
+                break;
+
+            case 1:
+                intent = new Intent(this, ArrayAdapterActivity.class);
                 break;
 
             default:

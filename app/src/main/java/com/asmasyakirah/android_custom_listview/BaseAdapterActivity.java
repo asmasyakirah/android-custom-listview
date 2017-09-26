@@ -48,7 +48,7 @@ public class BaseAdapterActivity extends AppCompatActivity
         context=this;
 
         // Implement listView using BaseAdapter
-        listView = (ListView) findViewById(R.id.thumbnailListView);
+        listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(new CustomBaseAdapter(this, names, images));
 
     }
