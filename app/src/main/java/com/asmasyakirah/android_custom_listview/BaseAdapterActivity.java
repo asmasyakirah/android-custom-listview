@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class BaseAdapterActivity extends AppCompatActivity
 {
     private static final int TITLE = R.string.list_simple_base_adapter;
-    private static final int REFERENCE_URL = R.string.list_simple_thumbnail_1_url;
+    private static final int REFERENCE_URL = R.string.list_simple_base_adapter_url;
 
     Context context;
     ListView listView;

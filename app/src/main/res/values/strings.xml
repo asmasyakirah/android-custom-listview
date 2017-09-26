@@ -7,6 +7,6 @@
     <string name="list_simple_array_adapter">Simple list using Array Adapter</string>
     <string name="list_dropdown">Dropdown list</string>
     <string name="list_dropdown_checklist">Dropdown checklist</string>
-    <string name="list_simple_thumbnail_1_url">https://www.caveofprogramming.com/guest-posts/custom-listview-with-imageview-and-textview-in-android.html</string>
+    <string name="list_simple_base_adapter_url">https://www.caveofprogramming.com/guest-posts/custom-listview-with-imageview-and-textview-in-android.html</string>
 
 </resources>
