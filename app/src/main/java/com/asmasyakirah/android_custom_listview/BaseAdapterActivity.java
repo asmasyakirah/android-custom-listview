@@ -37,6 +37,12 @@ public class BaseAdapterActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+        setupUI();
+        setupListView();
+    }
+
+    private void setupUI()
+    {
         // Setup title and description
         setTitle(getString(TITLE));
         details = (TextView) findViewById(R.id.detailTextView);
@@ -44,12 +50,14 @@ public class BaseAdapterActivity extends AppCompatActivity
         details.append(getString(TITLE));
         details.append(getString(R.string.reference));
         details.append(getString(REFERENCE_URL));
+    }
 
+    private void setupListView()
+    {
         context=this;
 
         // Implement listView using BaseAdapter
         listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(new CustomBaseAdapter(this, names, images));
-
     }
 }
