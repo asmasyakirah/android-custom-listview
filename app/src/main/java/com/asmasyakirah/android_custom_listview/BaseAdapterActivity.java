@@ -35,7 +35,7 @@ public class BaseAdapterActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thumbnail);
+        setContentView(R.layout.activity_list);
 
         // Setup title and description
         setTitle(getString(TITLE));

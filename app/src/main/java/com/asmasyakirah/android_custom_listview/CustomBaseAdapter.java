@@ -54,7 +54,7 @@ public class CustomBaseAdapter extends BaseAdapter
     public View getView(final int position, View convertView, ViewGroup parent)
     {
         Holder holder = new Holder();
-        View rowView = inflater.inflate(R.layout.list_thumbnail_1, null);
+        View rowView = inflater.inflate(R.layout.list_thumbnail, null);
         holder.tv = rowView.findViewById(R.id.thumbnailName);
         holder.img = rowView.findViewById(R.id.thumbnailImageView);
         holder.tv.setText(names[position]);
