@@ -24,11 +24,15 @@ public class HomeActivity extends AppCompatActivity
         switch (tag)
         {
             case 0:
-                intent = new Intent(this, BaseAdapterActivity.class);
+                intent = new Intent(this, SimpleBaseAdapterActivity.class);
                 break;
 
             case 1:
-                intent = new Intent(this, ArrayAdapterActivity.class);
+                intent = new Intent(this, SimpleArrayAdapterActivity.class);
+                break;
+
+            case 2:
+                intent = new Intent(this, ExpandableActivity.class);
                 break;
 
             default:

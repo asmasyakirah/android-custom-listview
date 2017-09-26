@@ -1,35 +1,20 @@
 package com.asmasyakirah.android_custom_listview;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class BaseAdapterActivity extends AppCompatActivity
+import java.util.ArrayList;
+
+public class ExpandableActivity extends AppCompatActivity
 {
-    private static final int TITLE = R.string.list_simple_base_adapter;
-    private static final int REFERENCE_URL = R.string.list_simple_base_adapter_url;
+    private static final int TITLE = R.string.list_expandable;
+    private static final int REFERENCE_URL = R.string.list_expandable_url;
 
-    Context context;
     ListView listView;
+    ArrayList layers;
     TextView details;
-
-    public static int [] images =
-    {
-            R.drawable.manhole,
-            R.drawable.cone,
-            R.drawable.highway,
-            R.drawable.bridge_rail
-    };
-
-    public static String [] names =
-    {
-            "Manhole",
-            "Cone",
-            "Highway",
-            "Bridge Rail"
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -54,10 +39,20 @@ public class BaseAdapterActivity extends AppCompatActivity
 
     private void setupListView()
     {
-        context=this;
+        //initializing objects
+        //adding some values to our list
+        layers = new ArrayList<>();
+        layers.add(new Layer("Manhole", R.drawable.manhole));
+        layers.add(new Layer("Cone", R.drawable.cone));
+        layers.add(new Layer("Highway", R.drawable.highway));
+        layers.add(new Layer("Bridge Rail", R.drawable.bridge_rail));
 
-        // Implement listView using BaseAdapter
+        //creating the adapter
+        ExpandableArrayAdapter adapter = new ExpandableArrayAdapter(this, R.layout.list_expandable, layers);
+
+        //attaching adapter to the listview. Hide divider.
         listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter(new CustomBaseAdapter(this, names, images));
+        listView.setDivider(null);
+        listView.setAdapter(adapter);
     }
 }

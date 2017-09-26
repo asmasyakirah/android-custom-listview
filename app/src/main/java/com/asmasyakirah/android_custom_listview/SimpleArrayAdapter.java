@@ -15,14 +15,14 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class CustomArrayAdapter extends ArrayAdapter<Layer>
+public class SimpleArrayAdapter extends ArrayAdapter<Layer>
 {
     private Context context;
     private int resource;
     private List<Layer> layers;
 
     //constructor initializing the values
-    public CustomArrayAdapter(Context context, int resource, List<Layer> layers)
+    public SimpleArrayAdapter(Context context, int resource, List<Layer> layers)
     {
         super(context, resource, layers);
         this.context = context;

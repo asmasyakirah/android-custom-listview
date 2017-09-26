@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_dropdown"
+                android:text="@string/list_expandable"
                 android:onClick="goToListView"
                 android:tag="2"/>
 
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_dropdown_checklist"
+                android:text="@string/list_expandable_checklist"
                 android:onClick="goToListView"
                 android:tag="3"/>
 

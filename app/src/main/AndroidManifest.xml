@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".BaseAdapterActivity">
+        <activity android:name=".SimpleBaseAdapterActivity">
         </activity>
-        <activity android:name=".ArrayAdapterActivity">
+        <activity android:name=".SimpleArrayAdapterActivity">
+        </activity>
+        <activity android:name=".ExpandableActivity">
         </activity>
     </application>
 

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class CustomBaseAdapter extends BaseAdapter
+public class SimpleBaseAdapter extends BaseAdapter
 {
     private static LayoutInflater inflater=null;
 
@@ -18,7 +18,7 @@ public class CustomBaseAdapter extends BaseAdapter
     private String [] names;
     private int [] images;
 
-    public CustomBaseAdapter(Activity context, String[] names, int[] images)
+    public SimpleBaseAdapter(Activity context, String[] names, int[] images)
     {
         this.context = context;
         this.names = names;

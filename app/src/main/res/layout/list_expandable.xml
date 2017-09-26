@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingStart="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_small"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/toggleImageView"
+            android:src="@drawable/circle_down"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/padding_small"
+            android:tint="@color/White"
+            />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="@dimen/text_size_title"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_medium"
+        android:orientation="vertical"
+        android:background="@drawable/box_outline"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_description"/>
+
+        <ImageView
+            android:id="@+id/descriptionImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingBottom="@dimen/padding_small"
+            android:src="@drawable/highway" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="@dimen/text_size_description"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/text_size_description"/>
+
+    </LinearLayout>
+
+</LinearLayout>

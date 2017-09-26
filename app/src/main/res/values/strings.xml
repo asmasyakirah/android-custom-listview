@@ -5,9 +5,10 @@
     <string name="reference">\n\nReferences: \n</string>
     <string name="list_simple_base_adapter">Simple list using Base Adapter</string>
     <string name="list_simple_array_adapter">Simple list using Array Adapter</string>
-    <string name="list_dropdown">Dropdown list</string>
-    <string name="list_dropdown_checklist">Dropdown checklist</string>
+    <string name="list_expandable">Expandable list</string>
+    <string name="list_expandable_checklist">Expandable list with checklist</string>
     <string name="list_simple_base_adapter_url">https://www.caveofprogramming.com/guest-posts/custom-listview-with-imageview-and-textview-in-android.html</string>
     <string name="list_simple_array_adapter_url">https://www.simplifiedcoding.net/custom-listview-android/</string>
+    <string name="list_expandable_url">https://stackoverflow.com/questions/34565481/add-a-drop-down-menu-for-each-item-of-a-custom-listview</string>
 
 </resources>
