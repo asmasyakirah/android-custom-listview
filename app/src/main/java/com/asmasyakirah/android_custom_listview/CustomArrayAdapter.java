@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -29,31 +30,40 @@ public class CustomArrayAdapter extends ArrayAdapter<Layer>
         this.layers = layers;
     }
 
+    private class Holder
+    {
+        TextView tv;
+        ImageView img;
+    }
+
     //this will return the ListView Item as a View
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
-        //we need to get the view of the xml for our list item
-        //And for this we need a layoutinflater
+        Layer layer = layers.get(position);
+
+        Holder holder = new Holder();
         LayoutInflater layoutInflater = LayoutInflater.from(context);
-
-        //getting the view
         View rowView = layoutInflater.inflate(resource, null, false);
+        holder.img = rowView.findViewById(R.id.thumbnailImageView);
+        holder.tv = rowView.findViewById(R.id.thumbnailName);
+        holder.tv.setText(layer.getName());
+        holder.img.setImageResource(layer.getImage());
 
-        //getting the view elements of the list from the view
-        ImageView img = rowView.findViewById(R.id.thumbnailImageView);
-        TextView tv = rowView.findViewById(R.id.thumbnailName);
-
-        //getting the hero of the specified position
-        Layer hero = layers.get(position);
-
-        //adding values to the list item
-        img.setImageDrawable(context.getResources().getDrawable(hero.getImage()));
-        tv.setText(hero.getName());
+        /*
+        rowView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Toast.makeText(context, "You clicked "+ layers.get(position).getName(), Toast.LENGTH_LONG).show();
+            }
+        });
+        */
 
         //adding a click listener to the button to remove item from the list
-        img.setOnClickListener(new View.OnClickListener()
+        holder.img.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
