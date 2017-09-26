@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity
         {
             case 0:
                 // Intent Service
-                intent = new Intent(this, Thumbnail1Activity.class);
+                intent = new Intent(this, BaseAdapterActivity.class);
                 break;
 
             default:

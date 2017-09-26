@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class Thumbnail1Activity extends AppCompatActivity
+public class BaseAdapterActivity extends AppCompatActivity
 {
-    private static final int TITLE = R.string.list_simple_thumbnail_1;
+    private static final int TITLE = R.string.list_simple_base_adapter;
     private static final int REFERENCE_URL = R.string.list_simple_thumbnail_1_url;
 
     Context context;
@@ -49,7 +49,7 @@ public class Thumbnail1Activity extends AppCompatActivity
 
         // Implement listView using BaseAdapter
         listView = (ListView) findViewById(R.id.thumbnailListView);
-        listView.setAdapter(new Thumbnail1Adapter(this, names, images));
+        listView.setAdapter(new CustomBaseAdapter(this, names, images));
 
     }
 }

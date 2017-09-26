@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_simple_thumbnail_1"
+                android:text="@string/list_simple_base_adapter"
                 android:onClick="goToListView"
                 android:tag="0"/>
 
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_simple_thumbnail_2"
+                android:text="@string/list_simple_array_adapter"
                 android:onClick="goToListView"
                 android:tag="1"/>
 
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_dropdown_with_details"
+                android:text="@string/list_dropdown"
                 android:onClick="goToListView"
                 android:tag="2"/>
 
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_small"
-                android:text="@string/list_group_dropdown_checklist"
+                android:text="@string/list_dropdown_checklist"
                 android:onClick="goToListView"
                 android:tag="3"/>
 
